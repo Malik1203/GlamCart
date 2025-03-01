@@ -1,8 +1,12 @@
+
 import React from 'react'
+import Cartitems from '../Components/CartItems/Cartitems'
 
 function Cart() {
   return (
-    <div>Cart</div>
+    <div>
+      <Cartitems/>
+    </div>
   )
 }
 
