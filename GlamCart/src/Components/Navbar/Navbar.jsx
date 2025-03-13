@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Navbar.css'
 import { FaCartShopping } from "react-icons/fa6";
-
 import logo2 from '../Assets/logo2.jpg';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   let [menu,setmenu]=useState('shop')
+  
   return (
     <div className='navbar'>
       <div className='navlogo'>
@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
      
         <ul className='navmenu'>
-            <li onClick={()=>{setmenu("shop")}}><Link style={{textDecoration:'none'}} to='/'>Shop</Link>{menu==="shop"?<hr />:<></>}</li>
+            <li onClick={()=>{setmenu("shop")}}><Link style={{textDecoration:'none'}} to='/'>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
             <li onClick={()=>{setmenu("Men")}}><Link style={{textDecoration:'none'}} to='/mens'>Men</Link>{menu==="Men"?<hr />:<></>}</li>
             <li onClick={()=>{setmenu("Women")}}><Link style={{textDecoration:'none'}} to='/womens'>Women</Link>{menu==="Women"?<hr />:<></>}</li>
             <li onClick={()=>{setmenu("Kids")}}><Link style={{textDecoration:'none'}} to='/kids'>Kids</Link>{menu==="Kids"?<hr />:<></>}</li>

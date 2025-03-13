@@ -3,6 +3,7 @@
     display: flex;
     background:linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
 
+
 }
 
 .hero-left{
@@ -56,4 +57,11 @@
 
 .hero-right img{
     height: 800px;
+}
+
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
