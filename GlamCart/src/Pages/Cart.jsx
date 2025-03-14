@@ -8,6 +8,7 @@ function Cart() {
       <Cartitems/>
     </div>
   )
+  
 }
 
 export default Cart
